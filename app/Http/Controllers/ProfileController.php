@@ -33,7 +33,7 @@ class ProfileController extends Controller
     	$user->alamat = $request->alamat;
     	if(!empty($request->password))
     	{
-    		$user->password = Hash::make($request->password);
+    		//$user->password = Hash::make($request->password);
     	}
     	
     	$user->update();
